@@ -1,0 +1,24 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="scripts.js"></script>
+</head>
+<body>
+<div id="canvasContainer">
+	<canvas style="border:solid 1px black" width="1000px" height="700px" id="canvas"></canvas>
+	<canvas style="border:solid 1px black;z-index:1000;" id="canvOverlay" width="1000px" height="700px"></canvas>
+</div>
+<div id="interface">
+	<div id="menu" class="panel">
+		<button id="btnSave" onclick="saveImage()">Save Image</button><img id="imgPreview" width="300px"/>
+	</div>
+	<div id="colorPanel" class="panel">
+		<input type="color"></input>
+		<canvas id="colorPicker" height="200px" width="200px"></canvas>
+		<div id="brushColorPreview"></div>
+		<div id="colorHistoryContainer" class="panel"></div>
+	</div>
+</div>
+</body>
+</html>
